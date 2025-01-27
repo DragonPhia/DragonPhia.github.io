@@ -42,6 +42,10 @@ a:link {
     color: #A4A400;
 }
 
+a:visited {
+    color: #A4A400; 
+  }
+
 pre {
     font-family: monospace;
 }
