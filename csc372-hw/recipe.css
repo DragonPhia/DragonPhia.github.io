@@ -5,7 +5,7 @@ body {
 h1 {
     color: #a4a400;
     background-color: #f0f0f0;
-    font-family: 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     text-align: center;
     font-size: 22pt;
     font-weight: bold;
@@ -16,11 +16,12 @@ h2, h3, h4, h5{
     color: #a4a400;
     background-color: #f0f0f0;
     text-align: left;
-    font-family: 'Lucida Sans Unicode', 'Gill Sans';
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     font-size: 18pt;
     text-decoration: underline; 
     margin-top: 15pt;
     margin-bottom: 15pt;
+    font-weight: normal;
 }
 
 ul {
@@ -50,11 +51,6 @@ pre {
     font-family: monospace;
 }
 
-/* 
-- All headings should be underlined. 
-- Every heading except "h1" should be left aligned with 18pt normal font.
-- Overall page body background should be white.
-- Text in body should have foregound color of #404040 and use an 11pt font. The font families for page text are Georgia, Garamond,
-    or any serif font available on the system.
-- Any links on the page should use the color #A4A400, matching the color of the page headings.
-*/
+hr {
+    border: 1px solid black;
+}
