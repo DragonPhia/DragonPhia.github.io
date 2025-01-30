@@ -13,12 +13,12 @@ h2 {
     text-decoration: underline;
 }
 
-.topnav {
+#topnav {
     overflow: hidden;
     background-color: #5e5e5b;
 }
 
-.topnav a {
+#topnav a {
     float: left;
     color: whitesmoke;
     text-align: center;
@@ -27,12 +27,12 @@ h2 {
     font-size: 20px;
 }
 
-.topnav a:hover {
+#topnav a:hover {
     background-color: #a4a400;
     color: black;
 }
 
-.homework_links {
+#homework_links {
     text-align: left;
 }
 

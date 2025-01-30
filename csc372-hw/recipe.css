@@ -1,5 +1,5 @@
 body {
-    background-image: url(given\ resources/silverware.jpg);
+    background-image: url(given_resources/silverware.jpg);
 }
 
 h1 {
@@ -25,7 +25,7 @@ h2, h3, h4, h5{
 }
 
 ul {
-    list-style-image: url(given\ resources/pie_icon.gif);
+    list-style-image: url(given_resources/pie_icon.gif);
 }
 
 .text_body, .quotes{
