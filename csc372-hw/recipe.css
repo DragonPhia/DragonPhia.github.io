@@ -51,6 +51,7 @@ pre {
     font-family: monospace;
 }
 
-hr {
-    border: 1px solid black;
+abbr {
+    text-decoration: underline dotted;
+    cursor: help;
 }
