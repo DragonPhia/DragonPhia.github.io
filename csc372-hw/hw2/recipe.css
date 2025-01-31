@@ -28,7 +28,7 @@ ul {
     list-style-image: url(given_resources/pie_icon.gif);
 }
 
-.text_body, .quotes{
+.text_body, .quotes, p{
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, 'Garamond', serif;
