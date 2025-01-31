@@ -26,7 +26,12 @@ a:hover {
 }
 
 p {
-    text-align: center;
     font-weight: bold;
-
+    font-size: 18px;
 }
+
+ul {
+    font-size: 20px;
+}
+
+
