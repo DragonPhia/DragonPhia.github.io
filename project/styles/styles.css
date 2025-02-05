@@ -1,9 +1,12 @@
-body {
-    background-color: rgb(202, 201, 201);
-    min-height: 100%;
+html {
+    width: 100vw;
 }
 
-h1, h2 {
+body {
+    background-color: rgb(202, 201, 201);
+}
+
+h1, h2, h3 {
     text-align: center;
     color: #1c1d69;
 }
@@ -28,7 +31,7 @@ nav a {
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 30px;
 }
 
@@ -37,7 +40,7 @@ nav a {
 }
 
 .menu {
-    width: 65%;
+    width: 75%;
     justify-content: right;
     display: flex;
     align-items: center;
@@ -69,6 +72,7 @@ nav a {
 
 .img_container img {
     padding: 5px;
+    width: 37%;
 }
 
 .product_listing {
@@ -95,15 +99,16 @@ nav a {
 .details_card {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
 }
 
-.details img {
+.details_card img {
     padding: 5px;
-    width: 40%;
+    width: 550px;
+    height: 550px;
+    border: 1px solid black;
 }
 
 .details {
@@ -124,6 +129,7 @@ colorword {
 .details {
     font-size: 18px;
 }
+
 
 
 
