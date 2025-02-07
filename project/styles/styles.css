@@ -6,9 +6,15 @@ body {
     background-color: rgb(202, 201, 201);
 }
 
-h1, h2, h3 {
+h1, h3 {
     text-align: center;
     color: #1c1d69;
+}
+
+h2 {
+    text-align: center;
+    color: #1c1d69;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 nav {
@@ -21,7 +27,7 @@ nav {
     justify-content: space-around;
 }
 
-.logo {
+#logo {
     font-size: 35px;
     font-weight: bold;
     color: rgb(240, 255, 25);
@@ -39,25 +45,25 @@ nav a {
     color: rgb(73, 197, 219);
 }
 
-.menu {
+#menu {
     width: 75%;
     justify-content: right;
     display: flex;
     align-items: center;
 }
 
-.search{
+#search{
     display: flex;
     align-items: center;
     margin-right: 0;
 }
 
-.search form {
+#search form {
     display: flex;
     margin: 0;
 }
 
-.search input {
+#search input {
     padding: 10px;
     font-size: 14px;
     border: 1px;
@@ -72,15 +78,20 @@ nav a {
 
 .img_container img {
     padding: 5px;
-    width: 37%;
+    width: 30%;
+}
+
+#horizontal_zipper img{
+    display: block;
+    width: 100%;
 }
 
 .product_listing {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    gap: 25px;
+    gap: 15px;
     justify-content: center;
+    align-items: center;
 }
 
 .product_card {
@@ -88,12 +99,12 @@ nav a {
     padding: 15px;
     text-align: center;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    justify-content: center;
 }
 
 .product_card img {
     width: 100%;
-    max-height: 400px;
+    max-height: 310px;
 }
 
 .details_card {
