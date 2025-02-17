@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(199, 223, 231);
+}
+
+
+h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; 
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px white; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 2; /* Ensure text is above the faded image */
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(127, 203, 247);
+    overflow: hidden;
+    padding: 12px;
+}
+
+nav a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover, .active {
+    color: rgb(96, 96, 233);
+}
+
+#img_container {
+    position: relative;
+    text-align: center;
+}
+
+#img_container img {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    opacity: 0.6; 
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(127, 203, 247);
+    font-size: 20px
+}
+
+
+
+#meal_plan_container {
+    border: solid 1px #000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#left_column_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(127, 203, 247);;
+}
+
+.left_column {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.right_column {
+    width: 50%;
+    text-align: center;
+    background-color: rgb(158, 180, 253);
+}
+
+ul {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+#total {
+    background-color: rgb(127, 203, 247);
+    font-size: 20px;
+}

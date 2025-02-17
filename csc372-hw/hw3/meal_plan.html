@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" type="text/css" href="styles/meal_plan.css">
+    <script src="script/meal_plan.js" defer></script>
+</head>
+<body>
+    <div id="flex_container">
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a class="active" href="meal_plan.html">Meal Plan</a>
+            </nav>
+
+            <div id="img_container">
+                <h1>Meal Plan</h1>
+                <img src="images/home_cover.jpg" alt="cover_page">
+            </div>
+            
+            <p> 
+                Looking to find the meals right for you? Look no further than your personalized meal plans!
+                Where you can add your interested dishes to your own cart and spend your prefered amount cash!
+                Build your perfect meal within your perfect price! 
+            </p> 
+        </header>
+
+        <main>
+            <div id="meal_plan_container">
+                
+                <div id="meal_plan_container">
+                    <div id="left_column_wrapper">
+                        <div class="left_column">
+                            <h2>Don</h2>             
+                            <ul>
+                                <li>Salmon Teriyaki: <strong>$11.95</strong></li> 
+                                <button class="add" data-name="Salmon Teriyaki" data-price="11.95">Add to Cart</button>
+                                
+                                <li>Bibimbap <strong>$13.45</strong></li>
+                                <button class="add" data-name="Bibimbap" data-price="13.45">Add to Cart</button>
+                
+                                <li>Spicy Ramen <strong>$10.95</strong></li>
+                                <button class="add" data-name="Spicy ramen" data-price="10.95">Add to Cart</button>
+                            </ul>
+                        </div>
+                
+                        <div class="left_column">
+                            <h2>Yum Yum Better Ice Cream</h2>             
+                            <ul>
+                                <li>Chocolate Ice Cream: <strong>$2.25</strong></li> 
+                                <button class="add" data-name="Chocolate Ice Cream" data-price="2.25">Add to Cart</button>
+                                
+                                <li>All the way Hot dog: <strong>$1.80</strong></li>
+                                <button class="add" data-name="All the way Hot dog" data-price="1.80">Add to Cart</button>
+                
+                                <li>Lemon Ice Cream: <strong>$2.25</strong></li>
+                                <button class="add" data-name="Lemon Ice Cream" data-price="2.25">Add to Cart</button>
+                            </ul>
+                        </div>
+                
+                        <div class="left_column">
+                            <h2>Old Town Draught House</h2>             
+                            <ul>
+                                <li>Wings(10): <strong>$10.00</strong></li> 
+                                <button class="add" data-name="Wings(10)" data-price="10.00">Add to Cart</button>
+                                
+                                <li>Pretzel: <strong>$5.00</strong></li>
+                                <button class="add" data-name="Pretzel" data-price="5.00">Add to Cart</button>
+                
+                                <li>Chicken Philly: <strong>$10.00</strong></li>
+                                <button class="add" data-name="Chicken Philly" data-price="10.00">Add to Cart</button>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="right_column">
+                        <h2>Cart</h2>
+                        <ul id="total_items"></ul>
+                        <span id="total">Total: $0.00<span>
+                    </div>
+                </div>
+        </main>
+    </div>
+</body>
+</html>
