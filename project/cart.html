@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Dragon Phiansin
+  Date: 02.23.2025
+  CSC 372-01
+
+  This is the cart page for my project for CSC372. It includes links to
+  Product list page, admin page, and shopping page. This project is about demonstrating
+  the functionality of an online web store. Users can assemble a shopping cart
+  of items to purchase, checkout, show transaction histories, and allow for
+  modifications of listings; all while working with a relation databse.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">ShareWear</div>
+            <div id="menu">
+                <a href="index.html">Home</a>
+                <a href="products.html">Product List</a>
+                <a class="active" href="cart.html">Cart</a>
+                <div id="search">
+                    <form>
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">Submit</button>  
+                    </form>
+                </div>
+                <a href="#">Sign in</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Shopping Cart</h1>
+
+    <div id="cart_container">
+        <div id="cart_list">
+            <div class="cart_item">
+                <img src="images/black_polo.png" alt="clothes"/> 
+                <div class="item_details">
+                    <h4>Plain Black Polo Shirt</h4>
+                    <p>Price: $19.99</p>
+                    <label>Quantity:</label>
+                    <input type="number" class="quantity_input" value="2" min="1">
+                    <div class="remove_btn">
+                        <button>Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart_item">
+                <img src="images/plain_white_button_up_shirt.png" alt="clothes"/> 
+                <div class="item_details">
+                    <h4>Plain White Button Up Shirt</h4>
+                    <p>Price: $25.99</p>
+                    <label>Quantity:</label>
+                    <input type="number" class="quantity_input" value="1" min="1">
+                    <div class="remove_btn">
+                        <button>Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart_item">
+                <img src="images/jeans_pants.png" alt="clothes"/> 
+                <div class="item_details"> 
+                    <h4>Denim Jeans Pants</h4>
+                    <p>Price: $39.99</p>
+                    <label>Quantity:</label>
+                    <input type="number" class="quantity_input" value="3" min="1">
+                    <div class="remove_btn">
+                        <button>Remove</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <h4>Subtotal: $179.94</h4>
+            <h4>Tax (6.75%): $12.15</h4>
+            <h4>Delivery Fee: $5.00</h4>
+            <h4>Service Fee: $0.00</h4>
+            <h4>Total: $197.09</h4>
+            <form action="submit">
+                <button>Proceed to Checkout</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; 2025 By Dragon Phiansin | All Rights Reserved.
+    </footer>
+
+</body>
+</html>

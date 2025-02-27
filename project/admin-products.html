@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Dragon Phiansin
+  Date: 02.27.2025
+  CSC 372-01
+
+  This is the admin-product page for my project for CSC372. It includes links to
+  to the rest of the admin pages. This project is about demonstrating
+  the functionality of an online web store. Users can assemble a shopping cart
+  of items to purchase, checkout, show transaction histories, and allow for
+  modifications of listings; all while working with a relation databse.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Product Listing</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">ShareWear</div>
+            <div id="menu">
+                <a href="admin-upload.html">Bulk Upload</a>
+                <a class="active" href="admin-products.html">Admin Product Listing</a>
+                <a href="index.html">Sign out</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Admin Product Listing</h1>
+    <div id="admin_container">
+        <div id="search_filter">
+            <label for="search_input">Search by Name:</label>
+            <input type="text" id="search_input" placeholder="Search product...">
+        
+            <label for="filter_input">Filter by Category:</label>
+            <input type="text" id="filter_input" placeholder="Category...">
+        </div>
+
+        <a href="#" id="add_product"> + Add New Product</a>   
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Image path</th>
+                    <th>Price</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Product 1</td>
+                    <td>This is very cool.</td>
+                    <td>Toys</td>
+                    <td><img src="image1.jpg" alt="image1"></td>
+                    <td>$19.99</td>
+                    <td>
+                        <a href="product-edit.html" class="button">Edit</a>
+                        <a href="#" class="button">Archive</a>
+                        <a href="product-edit.html" class="button">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Product 2</td>
+                    <td>It's an electronic, very cool. </td>
+                    <td>Electronics</td>
+                    <td><img src="image2.jpg" alt="image2"></td>
+                    <td>$9.99</td>
+                    <td>
+                        <a href="product-edit.html" class="button">Edit</a>
+                        <a href="#" class="button">Archive</a>
+                        <a href="#" class="button">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

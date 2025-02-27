@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Dragon Phiansin
+  Date: 02.27.2025
+  CSC 372-01
+
+  This is the product-edit page for my project for CSC372. It includes links to
+  to the rest of the admin pages. This project is about demonstrating
+  the functionality of an online web store. Users can assemble a shopping cart
+  of items to purchase, checkout, show transaction histories, and allow for
+  modifications of listings; all while working with a relation databse.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Edit (admin)</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">ShareWear</div>
+            <div id="menu">
+                <a href="admin-upload.html">Bulk Upload</a>
+                <a href="admin-products.html">Admin Product Listing</a>
+                <a href="index.html">Sign out</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Edit Product</h1>
+    <div id="admin_edit_container">
+        <form action="/update" method="POST">
+            <label for="product-id">Product ID (Read-only):</label>
+            <input type="text" id="product-id" value="101" readonly>
+            
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" value="Product 1" required>
+            
+            <label for="price">Price:</label>
+            <input type="number" id="price" value="19.99" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" rows="4">Product 1 description</textarea>
+            
+            <label for="image">Image Filename:</label>
+            <input type="text" id="image" value="Product_1.jpg" required>
+            
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+    
+</body>
+</html>
