@@ -31,19 +31,22 @@
         </nav>
     </header>
 
-    <h1>Admin Bulk Upload</h1>
-    <p>Select a JSON, CSV, or TXT file to upload product data to the database.</p>
-    <form id="file_upload" action="/upload" method="POST" enctype="multipart/form-data">
-        <label for="file">Choose file:</label>
-        <input type="file" id="file" name="file" accept=".json, .csv, .txt" required>
-        <br><br>
-        <button type="submit">Upload</button>
-    </form>
-    <h2>Example File Format</h2>
-    <p>The uploaded file should be in one of the following formats:</p>
-    <h4>JSON Format:</h4>
-    <div class="example">
-        <pre> 
+    <div class="upload_container">
+        <h1>Admin Bulk Upload</h1>
+        <p>Select a JSON, CSV, or TXT file to upload product data to the database.</p>
+        <div class="upload_box">
+            <form id="file_upload" action="/upload" method="POST" enctype="multipart/form-data">
+                <label for="file">Choose file:</label>
+                <input type="file" id="file" name="file" accept=".json, .csv, .txt" required>
+                <br><br>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        <h2>Example File Format</h2>
+        <p>The uploaded file should be in one of the following formats:</p>
+        <h4>JSON Format:</h4>
+        <div class="example">
+            <pre>
     [
         {
             "name": "Product 1",
@@ -58,18 +61,16 @@
             "image": "product2.jpg"
         }
     ]  
-        </pre>
-            
-    </div>
-    <h4>CSV Format:</h4>
-    <div class="example">
-        <pre>
+            </pre>
+        </div>
+        <h4>CSV Format:</h4>
+        <div class="example">
+            <pre>
     name,price,description,image
     Product 1,19.99,Description of product 1,product1.jpg
     Product 2,29.99,Description of product 2,product2.jpg
-        </pre>
-            
+            </pre>
+        </div>
     </div>
-
 </body>
 </html>

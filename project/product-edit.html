@@ -33,23 +33,23 @@
 
     <h1>Edit Product</h1>
     <div id="admin_edit_container">
-        <form action="/update" method="POST">
-            <label for="product-id">Product ID (Read-only):</label>
-            <input type="text" id="product-id" value="101" readonly>
+        <form action="#" method="POST">
+            <label for="product_id">Product ID (Read-only):</label>
+            <input type="text" id="product_id" value="101" readonly>
             
             <label for="name">Product Name:</label>
             <input type="text" id="name" value="Product 1" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" rows="4">This is very cool.</textarea>
+
+            <label for="image">Image Filename:</label>
+            <input type="text" id="image" value="Product_1.jpg" required>
             
             <label for="price">Price:</label>
             <input type="number" id="price" value="19.99" required>
             
-            <label for="description">Description:</label>
-            <textarea id="description" rows="4">Product 1 description</textarea>
-            
-            <label for="image">Image Filename:</label>
-            <input type="text" id="image" value="Product_1.jpg" required>
-            
-            <button type="submit">Save Changes</button>
+            <button type="submit">Update Product</button>
         </form>
     </div>
     

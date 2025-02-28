@@ -60,11 +60,18 @@ nav a {
 }
 
 table {
-    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-td {
-    text-align: center;
+th, td {
+    border: 1px solid #382ab3;
+    padding: 10px;
+}
+
+th {
+    background-color: #1c1d69;
+    color: white;
 }
 
 #admin_edit_container {
@@ -87,7 +94,7 @@ td {
 #admin_edit_container button {
     margin-top: 30px;
     padding: 10px;
-    background-color: #272fa1;
+    background-color: #1c1d69;
     color: white;
     border: none;
     cursor: pointer;
@@ -120,4 +127,19 @@ td {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+}
+
+.upload_container { 
+    max-width: 800px; 
+    margin: auto; 
+}
+
+.upload_box { 
+    border: 1px solid #ccc; 
+    padding: 15px; 
+}
+
+.example { 
+    background: #f8f8f8; 
+    white-space: pre-wrap; 
 }
