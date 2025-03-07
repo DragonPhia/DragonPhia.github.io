@@ -10,8 +10,7 @@
 <body>
     <h1>Rock Paper Scissors Game</h1>
 
-    
-    <div class="choices">
+    <div class="choices-container">
         <h2>Your throw</h2>
         <div class="choice-box">
             <img src="images/rock.PNG" alt="Rock" id="rock">
@@ -24,7 +23,7 @@
         </div>
     </div>
 
-    <div class="computer-box">
+    <div class="computer-container">
         <h2>Computer's Throw</h2>
         <div class="computer-choice-box">
             <img class="computer" src="images/question-mark.PNG" alt="Computer's choice" id="computer-choice">
@@ -33,7 +32,12 @@
     
     <h2 class="result" id="result">Make your move!</h2>
 
-    <h2 id="scoreboard">Wins: 0 | Losses: 0 | Ties: 0</h2>
+    <h2>Scoreboard</h2>
+    <div class="scoreboard">
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+    </div>
 
     <button id="reset-button">Play Again</button>
 </body>
