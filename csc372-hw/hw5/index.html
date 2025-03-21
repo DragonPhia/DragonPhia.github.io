@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  Name: Dragon Phiansin
+  Date: 03.19.2025
+  CSC 372-01
+
+  This is the index.html page for Assignment 5 Fetch. This assignment is about fetching
+  GitHub repositories by searching for valid GitHub usernames. It will retreive a users
+  corresponding repositories along with basic information on each of their repositories.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Gallary</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <input type="text" id="githubUsername" placeholder="Enter GitHub username">
+    <button id="searchButton">Search</button>
+    
+    <div id="loadingMessage" class="loading-message" style="display: none;">Loading repositories...</div>
+
+    <div class="repo-card">
+      <div class="info"></div>
+    </div>
+
+</body>
+</html>
+  
