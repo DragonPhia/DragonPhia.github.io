@@ -1,57 +1,57 @@
 input {
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .repo-card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .repo-item {
-    background-color: #f7f4f4;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    outline: 2px solid transparent; 
-    width: 280px;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .repo-item:hover {
-    outline: 2px solid #177bdf; 
-  }
-  
-  .repo-item h3 a {
-    text-decoration: none;
-    color: #177bdf;
-    font-size: 18px;
-  }
-  
-  .repo-item .info p {
-    font-size: 14px;
-    color: #11508f;
-  }
-  
-  .repo-item .info {
-    margin-top: 10px;
-  }
-  
-  .loading-message {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 0;
-  }
-  
+  margin: 10px;
+  width: 200px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #f7f4f4;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: 2px solid transparent;
+  width: 250px;
+  padding: 12px;
+  text-align: center;
+}
+
+.card:hover {
+  outline: 2px solid #177bdf;
+}
+
+.card h3 a {
+  text-decoration: none;
+  color: #177bdf;
+  font-size: 18px;
+}
+
+.card .info p {
+  font-size: 14px;
+  color: #11508f;
+}
+
+.card .info {
+  margin-top: 10px;
+}
+
+#loadingMessage {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  display: none;
+}

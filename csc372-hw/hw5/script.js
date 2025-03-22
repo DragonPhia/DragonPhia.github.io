@@ -41,6 +41,7 @@ async function fetchRepos(user) {
     displayRepos(repos);
 }
 
+// Fetch all commits using pagination
 function fetchCommits(apiUrl, allCommits = []) {
     return fetch(apiUrl)
         .then(response => {
@@ -58,6 +59,7 @@ function fetchCommits(apiUrl, allCommits = []) {
         });
 }
 
+// Helper function to get ALL commits of a repo (if there's A LOT)
 function getNextPageUrl(paginationHeader) {
     if (!paginationHeader) return null;
     const linkParts = paginationHeader.split(',');
@@ -71,12 +73,13 @@ function getNextPageUrl(paginationHeader) {
 }
 
 function displayRepos(repos) {
-    const repoCard = document.querySelector(".repo-card");
-    repoCard.innerHTML = ""; // Clear previous content
+    const gallery = document.querySelector(".gallery");
+    gallery.innerHTML = ""; // Clear previous content
 
+    // For displaying each repo of a user dynamically 
     for (const repo of repos) {
-        const repoElement = document.createElement("div");
-        repoElement.classList.add("repo-item");
+        const cardElement = document.createElement("div");
+        cardElement.classList.add("card");
 
         const repoName = document.createElement("h3");
         const repoLink = document.createElement("a");
@@ -117,11 +120,11 @@ function displayRepos(repos) {
         info.appendChild(created);
         info.appendChild(updated);
 
-        repoElement.appendChild(repoName);
-        repoElement.appendChild(description);
-        repoElement.appendChild(info);
+        cardElement.appendChild(repoName);
+        cardElement.appendChild(description);
+        cardElement.appendChild(info);
 
-        repoCard.appendChild(repoElement);
+        gallery.appendChild(cardElement);
     }
 }
 
