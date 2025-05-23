@@ -57,6 +57,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5em;
     padding: 30px 150px 0;
 }
@@ -339,7 +340,7 @@
 
 .projects {
     width: 100%;
-    min-height: 280vh;
+    min-height: 310vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -411,6 +412,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.project img {
+    border: 2px solid black;
 }
 
 .project-sources {
