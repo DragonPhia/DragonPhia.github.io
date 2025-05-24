@@ -340,7 +340,7 @@
 
 .projects {
     width: 100%;
-    min-height: 310vh;
+    min-height: 330vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -348,6 +348,26 @@
     padding: 30px 150px 0;
     flex-direction: column;
     height: 100%;
+}
+
+.projects .projects-content .skills {
+    padding: 50px;
+    margin: 10px;
+}
+
+.projects .projects-content .skills h2{
+    padding: 15px 0;
+    margin: 10px;
+    font-size: 32px;
+}
+
+.projects .projects-content .skills .project-desc-list{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: square;
+    padding: 10px 0;
 }
 
 .projects .projects-content .project {
@@ -361,7 +381,6 @@
     color: orangered;
     font-size: 32px;
 }
-
 
 .projects .projects-content .project .project-desc-list {
     font-size: 20px;
